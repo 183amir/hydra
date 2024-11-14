@@ -1,0 +1,14 @@
+defaults:
+  - hydra/launcher: dask
+
+hydra:
+  launcher:
+    dask:
+      cluster:
+        type: slurm
+        queue: your_queue_name
+        project: your_project_name
+        walltime: "01:00:00"
+        processes: 4
+        cores: 4
+        memory: "16GB"

@@ -1,0 +1,17 @@
+defaults:
+  - hydra/launcher: dask
+
+hydra:
+  launcher:
+    dask:
+      cluster:
+        type: aws
+        region: your_aws_region
+        ami: your_ami_id
+        instance_type: your_instance_type
+        key_name: your_key_name
+        security_group: your_security_group
+        subnet_id: your_subnet_id
+        processes: 4
+        cores: 4
+        memory: "16GB"
